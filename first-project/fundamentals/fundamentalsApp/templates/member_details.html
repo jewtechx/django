@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{%block title%}
+ Dite,Inc - Member
+{%endblock%}
+
+<link rel="stylesheet" href="index.css"/> 
+
+{%block content%}
+ <ul>
+    <li>{{mymember.firstName}} {{mymember.lastName}}</li>
+ </ul>
+ <a href="/members">Back</a>
+{%endblock%}

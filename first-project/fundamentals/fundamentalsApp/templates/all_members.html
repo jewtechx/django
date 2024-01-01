@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{%block title%} Dite Inc - Members {%endblock%}
+
+<link rel="stylesheet" href="index.css"/> 
+
+{%block content%}
+ <h1>Members of Dite , Inc</h1>
+
+ <div>
+    {% for x in mymembers%}
+        <li><a href="details/{{x.id}}">{{x.firstName}} {{x.lastName}}</a></li>
+    {%endfor%}
+ </div>
+{%endblock%}
